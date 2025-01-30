@@ -1,16 +1,51 @@
-# Mi Proyecto Web
+# Calculadora de porcentaje con Vue.js
 
-Este es un proyecto web creado con **Vue.js** y **Bootstrap 5**. La aplicación proporciona una interfaz interactiva y moderna, con un diseño responsive, utilizando las herramientas más recientes del desarrollo frontend.
+Una simple calculadora de porcentajes desarrollada con Vue.js.
 
-## Tecnologías usadas
+## Descripción
 
-- **Vue.js**: Framework progresivo de JavaScript para construir interfaces de usuario interactivas.
-- **Bootstrap 5**: Framework de diseño que facilita la creación de sitios web responsivos y con buen diseño.
+Esta calculadora permite realizar cálculos de porcentaje de forma rápida y sencilla. Puedes ingresar dos valores y obtener el porcentaje correspondiente, o calcular un porcentaje de un valor dado.
+
+## Características
+
+*   Interfaz intuitiva y fácil de usar.
+*   Cálculo de porcentaje entre dos valores.
+*   Cálculo de porcentaje de un valor dado.
+*   Diseño responsivo para adaptarse a diferentes dispositivos.
+
+## Tecnologías utilizadas
+
+*   Vue.js
+*   HTML
+*   CSS
+
+## Instalación
+
+1.  Clona este repositorio: `git clone https://github.com/valentinsala/Calculadora-de-porcentaje-con-Vue.js`
+2.  Abre el archivo `index.html` en tu navegador.
 
 ## Uso
 
-Este proyecto puede ser utilizado de forma gratuita para proyectos personales, educativos o de pruebas, siempre y cuando no sea utilizado con fines comerciales. 
+1.  Ingresa los valores en los campos correspondientes.
+2.  Selecciona el tipo de cálculo que deseas realizar.
+3.  Haz clic en el botón "Calcular".
+4.  El resultado se mostrará en el campo correspondiente.
+
+## Ejemplo
+
+*   **Calcular el porcentaje entre dos valores:** Ingresa 10 y 50. El resultado será 20%.
+*   **Calcular el porcentaje de un valor dado:** Ingresa 25 y 100. El resultado será 25.
+
+## Contribución
+
+Siéntete libre de Forkear este repositorio y realizar mejoras. ¡Las contribuciones son bienvenidas!
 
 ## Licencia
 
-Este proyecto está disponible bajo los términos de la Licencia [MIT](https://opensource.org/licenses/MIT), lo que permite su uso y modificación, siempre y cuando no se utilice para fines comerciales sin permiso explícito.
+Este proyecto está bajo la licencia MIT.
+
+## Contacto
+
+Si tienes alguna pregunta o sugerencia, no dudes en contactarme.
+
+¡Espero que esta calculadora te sea útil!
