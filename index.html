@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <title>Calculadora de porcentajes</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="/vendor/style.css">
+    </head>
+
+    <body>
+        <header>
+            <!-- place navbar here -->
+        </header>
+        <main><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+            <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> 
+            <br><br><br>
+            <div id="app" class="container my-5">
+                <div class="row justify-content-between">
+                    <!-- Lado izquierdo: Calculadora -->
+                    <div class="col-md-6">
+                        <div class="card shadow-lg">
+                            <div class="card-body">
+                                <h1 class="text-center mb-4" style="color: #4CAF50;">Calculadora de Porcentajes</h1>
+                                <form @submit.prevent="calcular">
+                                    <div class="mb-3">
+                                        <label for="total" class="form-label">Monto total:</label>
+                                        <input id="total" class="form-control" type="number" v-model="total" placeholder="Escribe el total" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="porcentaje" class="form-label">Porcentaje:</label>
+                                        <input id="porcentaje" class="form-control" type="number" v-model="porcentaje" placeholder="Escribe el porcentaje" required>
+                                    </div>
+                                    <div class="d-grid">
+                                        <button type="submit" class="btn btn-success" @mouseover="botonHover" @mouseleave="botonLeave">Calcular</button>
+                                    </div>
+                                </form>
+                                <div v-if="resultado !== 0" class="mt-4 text-center">
+                                    <h2>Resultado: <span class="text-success">{{ resultado }}</span></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- Lado derecho: Mensaje y logo de Vue.js -->
+                    <div class="col-md-5 d-flex justify-content-center align-items-center">
+                        <div class="text-center">
+                            <h3 class="mb-3">Esta calculadora fue creada con Vue.js</h3>
+                            <img src="https://vuejs.org/images/logo.png" alt="Vue.js Logo" style="width: 80%;"  class="img-fluid" :class="{ 'vue-hover': isHovered }">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script></main>
+        <footer>
+            <!-- place footer here -->
+        </footer>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+        <script src="vendor/js.js"></script>
+    </body>
+</html>

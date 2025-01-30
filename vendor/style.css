@@ -1,0 +1,7 @@
+    /* Animación en el logo de Vue.js */
+    .vue-hover {
+        transition: transform 0.3s ease;
+    }
+    .vue-hover:hover {
+        transform: scale(1.1);
+    }
